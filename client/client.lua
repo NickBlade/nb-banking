@@ -1,5 +1,3 @@
-
-
 CreateThread(function()
     playerPed = PlayerPedId()
     playerCoords = GetEntityCoords(playerPed)
@@ -18,18 +16,28 @@ end)
 CreateThread(function()
     while true do
         Wait(1000)
-        for k, v in pairs(Config["banks"]) do
+        for k, v in pairs(Config.banks) do
             local coords = vector3(v.x, v.y, v.z)
             local distance = #(playerCoords - coords)
             
             if distance < 1.5 then
                 print("Check!")
-                currentBank = v
-                isInBank = true
                 break
             else
                 isInBank = false
             end
+        end
+    end
+
+    for k, v in pairs(Config.atms) do
+        local model = GetHashKey(v)
+        entity = GetClosestObjectOfType(playerCoords.x, playerCoords.y, playerCoords.z, 1.0, model, false, false, false)
+    
+        if entity ~= 0 then
+            print("Check ATM!")
+            break
+        else
+            atmFound = false
         end
     end
 end)
