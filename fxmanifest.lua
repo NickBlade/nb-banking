@@ -11,5 +11,6 @@ server_scripts {
 } 
 client_scripts { 
 	'./client/client.lua', 
-	'./client/modules/framework.lua' 
+	'./client/modules/framework.lua',
+	'@oxmysql/lib/MySQL.lua'
 } 
