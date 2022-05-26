@@ -9,7 +9,7 @@ FiveM banking system, currently working only for ESX framework.
 
 ## Requirements
 </div>
-- [oxmysql](https://github.com/overextended/oxmysql/releases)
+* <a href="https://github.com/overextended/oxmysql/releases">oxmysql</a>
 
 <div align="center">
 
