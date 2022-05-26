@@ -7,7 +7,8 @@ shared_scripts {
    './shared/config.lua' 
 } 
 server_scripts { 
-	'./server/client.lua' 
+	'./server/client.lua',
+	'./server/modules/framework.lua' 
 } 
 client_scripts { 
 	'./client/client.lua', 
