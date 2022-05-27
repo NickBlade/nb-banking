@@ -1,5 +1,5 @@
 # nb-banking
-FiveM banking system, currently working only for ESX framework.
+FiveM banking system, currently in development.
 
 <div align="center">
 
