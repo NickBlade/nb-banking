@@ -22,8 +22,6 @@ CreateThread(function()
             
             if distance < 1.5 then
                 print("Check!")
-                TriggerEvent('luke_textui:ShowUI', 'E - Use ATM')
-
                 break
             else
                 isInBank = false
